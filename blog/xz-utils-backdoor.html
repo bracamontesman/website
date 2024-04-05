@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="miguel bracamontes">
+	<meta name="description" content="a wwweb enthusiast online space">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="xz-utils backdoor">
+	<meta property="og:url" content="https://miguelbracamontes.website/blog/xz-utils backdoor.html">
+	<meta property="og:description" content="on march 29th, 2024, folks stumbled upon a sneaky backdoor in xz-utils">
+	<meta property="og:image" content="https://images2.imgbox.com/9c/13/lxhTGs4k_o.png">
+	<meta property="article:author" content="miguel bracamontes">
+    <title>miguel bracamontes</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="preconnect" href="https://fonts.bunny.net">
+	<link rel="stylesheet" href="https://fonts.bunny.net/css?family=cousine:400">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="me" href="https://infosec.exchange/@miguel">
+</head>
+<body>
+	<!-- header -->
+	<header class="marpad">
+		<h1>miguel bracamontes</h1>
+		<p><em>a wwweb enthusiast</em></p>
+		<img src="https://images2.imgbox.com/71/7e/dJZMLjYc_o.gif">
+	</header>
+	<!-- navigation bar -->
+	<nav class="marpad">
+		<ul class="navbar">
+			<li><a href="/index">home</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li><a href="/contact">contact</a></li>
+			<li><a href="/about">about</a></li>
+		</ul>
+	</nav>
+	<!-- content -->
+	<main class="marpad">
+		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>xz-utils backdoor</h2>
+				<time>2024-03-30</time>
+				<p class="marginless"><em>about the odd case of xz-utils backdoor and the creator of it</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<h3>what is xz-utils?</h3>
+                <p>xz utils, which used to be called lzma utils, <a href="https://en.wikipedia.org/wiki/XZ_Utils" target="_blank">is a free software toolbox for lossless data compression</a>. it's mainly used through command line interaction and it works on systems like linux and also windows starting from version 5.0. when you use xz utils to compress or decompress data, it uses something called the lempel-ziv-markov chain algorithm, or lzma for short. this fancy name basically means it's a smart way to crunch down data without messing it up.</p>
+                <p>originally, xz utils was made as a version of another program called lzma-sdk, which was created by a guy named igor pavlov. but then the xz utils folks tweaked it to work smoothly on unix systems (like linux) and to match how things usually work in those environments.</p>
+
+                <h3>discovery of a backdoor</h3>
+                <p>on march 29th, 2024, andres freund, a software engineer at microsoft, <a href="https://mastodon.social/@andresfreundtec/112180083704606941" target="_blank">accidentally stumbled upon a sneaky backdoor in xz-utils</a> versions 5.6.0 and 5.6.1 while researching odd cpu usage by ssh processes.</p>
+                <p>the sneaky code wasn't spotted in the original code stored in the git repository, which is like the master storage for code changes. why? because it was using a tool called an m4 macro, which wasn't part of the git distribution. according to freund, who discovered this mischief and talked about it on the oss-security's openwall, this m4 macro is like the secret handshake for the backdoor to sneak into the building process. now, here's where it gets serious: <a href="https://www.redhat.com/en/blog/urgent-security-alert-fedora-41-and-rawhide-users" target="_blank">red hat says</a> that this sneaky build can mess with the security of sshd, which is a way to securely connect to computers remotely. if everything lines up just right, this meddling could let a bad actor break through sshd's security and get into the whole system without permission.</p>
+
+                <h3>suspected actor</h3>
+                <p>when we're talking about an "under-the-radar" project like xz, they are usually not backed by any big company and runs purely on volunteer power. that's the vibe of many open-source projects. the lesser-known ones, sometimes used by loads of people, are looked after by just a handful of folks who donate their time to keep things running smoothly.</p>
+                <p>this particular tool was put together by lasse collin from the get-go, with jia tan jumping in about two years back, seemingly out of the blue. jia got the keys to the kingdom about six months later, which means this seemingly "boring" tool, used by tons of folks, was being looked after by just two people. and when lasse needed to take a breather due to health stuff, that left jia in charge of making changes and giving the green light to two versions that, so far, seem to be affected.</p>
+                <p>as freund pointed out in their <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4" target="_blank">message on the openwall forum</a>, considering the activity over a few weeks, the person making the changes is either directly involved or their system got hit hard. but it seems less likely that it's just a hacked system, especially since they were talking for some time about the "fixes" needed. these fixes were basically band-aids to patch up crashes caused by xz and the sneaky backdoor itself not interacting so well. <a href="https://news.ycombinator.com/item?id=39865810" target="_blank">jia tan teamed up with other developers</a> to push these fixes (basically, workarounds for the backdoor glitches) into major linux distributions, like fedora 40 and 41. they even pitched in to write code to tackle related issues and speed up the fixes.</p>
+                <p>now, here's where things get a bit intense. pulling off something like this, spreading a sneaky attack through a project over two years of work and collaboration, takes serious cash. it's like, you need big bucks to make big moves. so, when you see something this slick, it's hard not to think it's being bankrolled by a government or something. it's got us wondering: could sneaking into open-source software through supply-chain attacks become the new target for certain groups? it's definitely a spooky thought.</p>
+                <div class="img-container">
+                    <img src="https://images2.imgbox.com/1c/8f/YSMC57xJ_o.png">
+                </div>
+			</section>
+		</article>
+	</main>
+	<!-- footer -->
+	<footer class="marpad">
+		<p>&copy; 2024 miguel bracamontes</p>
+		<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img src="https://images2.imgbox.com/a5/42/IV9saTzo_o.png"></a>
+	</footer>
+	<!-- scripts -->
+	<script src="/js/script.js"></script>
+</body>
+</html>

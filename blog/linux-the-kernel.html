@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="miguel bracamontes">
+    <meta name="description" content="a wwweb enthusiast online space">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="linux the kernel">
+    <meta property="og:url" content="https://miguelbracamontes.website/blog/linux-the-kernel.html">
+    <meta property="og:description" content="linux is a piece of the whole, present in a lot of operating systems">
+    <meta property="og:image" content="https://images2.imgbox.com/9c/13/lxhTGs4k_o.png">
+    <meta property="article:author" content="miguel bracamontes">
+    <title>miguel bracamontes</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=cousine:400">
+    <link rel="stylesheet" href="/css/style.css">
+	<link rel="me" href="https://infosec.exchange/@miguel">
+</head>
+<body>
+	<!-- header -->
+	<header class="marpad">
+		<h1>miguel bracamontes</h1>
+		<p><em>a wwweb enthusiast</em></p>
+		<img src="https://images2.imgbox.com/71/7e/dJZMLjYc_o.gif">
+	</header>
+	<!-- navigation bar -->
+	<nav class="marpad">
+		<ul class="navbar">
+			<li><a href="/index">home</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li><a href="/contact">contact</a></li>
+			<li><a href="/about">about</a></li>
+		</ul>
+	</nav>
+    <!-- content -->
+    <main class="marpad">
+		<article>
+            <!-- blog entry metadata (title, date and about) -->
+            <section class="article-header">
+                <h2>linux the kernel</h2>
+                <time>2024-03-04</time>
+                <p class="marginless"><em>about linux and technology</em></p>
+            </section>
+            <!-- blog entry content -->
+            <section>
+                <p>it is common for us to refer to any operating system that uses that kernel as "linux". in reality, linux is not an operating system in itself; it is a fundamental part for building one, though. but being only "a part" (though fundamental) means that there are many variations of operating systems, all built using many parts, each their own, but coinciding in one: the kernel.</p>
+                <p>an operating system kernel is the program (the lines of code arranged to perform tasks) that communicates directly with the processor. although some purists may point out a certain error here, i will continue nonetheless with the aim of explanation. and it's not just with the processor, but with any hardware (a piece of intelligent metal that knows how to do certain things) that lies there, with potential at rest and that is part of the computer.</p>
+                <p>in the end, when one reflects on the nature of computers, one finds that they are nothing but a collection of metal sheets that we teach mathematics to and then assemble in a certain way. the iteration in the applications of that knowledge we put on the sheets led us to represent significant data through the coordinated dance of ones and zeros. we made millions of little switches suddenly let light pass, or suddenly not, and the accumulation of those actions means something to us. whether it's a sound, music, a pixel, a color, an image, a video. all of them digital products that are at the same time cultural and human material and, on the other hand, a combination of electrical states representing symbols.</p>
+                <p>so, to make those switches let light pass (or not) in a certain way, coordinated in such a way that the result is what the user expects, i must have a means of communication between the person using the machine and the metal sheets, which know very well how to do their thing, interpreting and representing, but not reading minds. computers (the set of intelligent sheets assembled in a certain way) are pedantic machines. very pedantic. they are capable of impressive computations as long as they receive precise instructions. almost military.</p>
+                <p>something that is known is that computers have managed to simplify this process very well. nowadays computers come equipped with a collection of tools to satisfy practically any need that can be delegated to technology through what we now know as applications and which was previously known simply as programs. in the end it's the same thing: the software that was written to automate (or facilitate) a task. an interface through which the user interacts (or enters instructions, clicks, text) and receives a solution (or computation, result) from the computer.</p>
+                <p>the question that automatically arises at this point is what happens behind the scenes for those "applications" to communicate with the intelligent sheets and for me to receive my result? or perhaps it's also worth asking how the hardware interacts with the software? fortunately, the answer is the very topic of this dissertation: operating systems, including their constituent parts, including the kernel.</p>
+                <p>before continuing like this, it seems productive to me to note what i understand by an operating system. when you reduce them to their most nauseating minimum in order to define them, you can say that they are a bundle of programs. a more or less predefined ecosystem with certain characteristics and parameters that seeks to satisfy a specific group of needs. clear examples of this are windows and macos, only because they are the most popular.</p>
+                <p>if we now allow ourselves to think in terms of windows and mac, the comparison becomes much easier. we can talk about a clear difference both in the visual aspect and in the functional aspect. although the purposes of each are similar, the method employed to satisfy them is different. they each have their own way of approaching the problem that is perfectly analyzable. the taskbar, the dock, the shortcuts, the method of installing programs, etc. they are two different operating systems. each one has a program that is a calculator, or one that is a text editor. each operating system will offer a collection of more or less office-like programmed tools in the case of home computers. or they can also offer other types of configurations depending on the purpose or use they seek to give to the computer. in the end it's the same thing: operating systems are that collection of programs, windows, desktop environments (how everything looks under a branding), commands, shortcuts, etc., that users interpret as an ontological whole called "computer". but it's worth abstracting and understanding it separately.</p>
+                <p>they happen simultaneously, however. they are interactions, simultaneous actions of one and the other (the computer and its operating system). on the one hand the intelligent sheets allowing (or not) electricity to pass through their cells to store them as ones and zeros dancing. and on the other hand that set of programs, those lines of code arranged in a certain way that, when executed in order in the style of instructions, result in an operating system. one of many.</p>
+                <p>one of the programs that are a constant across most operating systems is the one that allows you to explore your files. the program that, when you open it, shows you your images, documents, downloads,music, etc. the file browser is a window to our storage disks. it is an interface that allows us to visually observe the hierarchical order adopted by the files and directories that all together constitute the sheets where the code of my operating system is written.</p>
+                <p>all those tools are programs. that is, they are lines of code actually written in a document and that must lie somewhere to be accessed. all those files that constitute my programs (and everything else that i store on my disks) are organized following an established rule. "file systems" are formed so that there is a conventional order in which things will be saved so that they can later be accessed and used. so with the file browser we can actually observe the file system in action, even if it sounds redundant.</p>
+                <p>who determines this convention of archival arrangement? the kernel. not only does it determine the file system (or possible selection of systems) but it is basically responsible for all the convention on which the instructions of the user and the intelligent sheets that form the computer must communicate. why is a letter c written when i press the key with the c symbol on my keyboard? why does the word processor return a pdf file when i clicked on its button that says "export to pdf"? why did my printer start printing a document when i clicked on the program where it says "print"? what determines in what "language" the instructions to the computer will be given at the processor level?</p>
+                <p>i am shown the operating system through the monitors. another fundamental part of the operating system takes care of that: the desktop environment. but if i have a monitor i can actually see my operating system. i can see the program, its window, its interface, its buttons, its colors, its different functions. i can see the text appear obeying my keystrokes. all this visual interaction and input of data that i am having with my operating system (and that i can also see) will result in a reaction from my computer. it will publish my text online, play music, save my files as i produce them, store and encrypt certain information in the form of texts and images.</p>
+                <p>and each of those interactions with my metal happened in a language. in a way. my hard drives, my processor, my video card, all that intelligent metal receiving strict and detailed orders on when (and when not) to let a byte of energy pass. how long to store it. how to make the ones and zeros dance.receiving instructions from me through buttons on my screen. the gigantic translation of buttons on the screen is equal to bits yes or no in my processor, bytes yes or no in my storage, it is the responsibility of the kernel. that fundamental part for an operating system. the kernel is the one that speaks the language of the intelligent sheets. everything else is mere translation for the simple human (speaking figuratively, since the human wrote those kernels). interpretations that we assemble in a machine language and that do the work of our interpreter with the pedantic computers.</p>
+                <p>that, then, is linux. an interpreter that dictates conventions so that, through it, the programs of the operating system communicate the user's instructions to the hardware. linux is the kernel that operating system developers decide to use to, on top of it, write (or compile) a set of tools that, put together, form an operating system. or also what in the world of linux kernel systems is usually called a "linux distribution". like the one i use, for example, called manjaro. but the philosophical details of distributions are material for another dissertation. for now, it is enough to observe that, fortunately, we recognize that linux is not "a single operating system, difficult to understand" but a vibrant collection of many operating systems, each of which specializes in meeting a class of needs and that due to their free and open nature are well worth trying.</p>
+            </section>
+        </article>
+    </main>
+    <!-- footer -->
+	<footer class="marpad">
+		<p>&copy; 2024 miguel bracamontes</p>
+		<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img src="https://images2.imgbox.com/a5/42/IV9saTzo_o.png"></a>
+	</footer>
+    <!-- scripts -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

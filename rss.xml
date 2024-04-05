@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>bracamontesman dot click rss feed</title>
+<link>https://bracamontesman.click</link>
+<description>rss feed for miguel bracamontes blog</description>
+<atom:link href="https://bracamontesman.click/rss.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>hello world</title>
+<link>https://bracamontesman.click/blog/hello-world.html</link>
+<guid>https://bracamontesman.click/blog/hello-world.html</guid>
+<pubDate>2024-03-01</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>hello world</h2>
+				<time>2024-03-01</time>
+				<p class="marginless"><em>about welcomes</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>it's alive!</p>
+				<p>this blog stems from my passion for technology and the occasional curiosity that drives me to build things. i've decided to embark on this project to share my knowledge, experiences, and discoveries with posterity (and any readers who join in). my goal is to create a place where i can document my learning journey, preserve my memories, and provide a space for my ideas to live.</p>
+				<p>thanks for being here</p>
+			</section>
+		</article>]]></description>
+</item>
+<item>
+<title>linux the kernel</title>
+<link>https://bracamontesman.click/blog/linux-the-kernel.html</link>
+<guid>https://bracamontesman.click/blog/linux-the-kernel.html</guid>
+<pubDate>2024-03-04</pubDate>
+<description><![CDATA[		<article>
+ <!-- blog entry metadata (title, date and about) -->
+ <section class="article-header">
+ <h2>linux the kernel</h2>
+ <time>2024-03-04</time>
+ <p class="marginless"><em>about linux and technology</em></p>
+ </section>
+ <!-- blog entry content -->
+ <section>
+ <p>it is common for us to refer to any operating system that uses that kernel as "linux". in reality, linux is not an operating system in itself; it is a fundamental part for building one, though. but being only "a part" (though fundamental) means that there are many variations of operating systems, all built using many parts, each their own, but coinciding in one: the kernel.</p>
+ <p>an operating system kernel is the program (the lines of code arranged to perform tasks) that communicates directly with the processor. although some purists may point out a certain error here, i will continue nonetheless with the aim of explanation. and it's not just with the processor, but with any hardware (a piece of intelligent metal that knows how to do certain things) that lies there, with potential at rest and that is part of the computer.</p>
+ <p>in the end, when one reflects on the nature of computers, one finds that they are nothing but a collection of metal sheets that we teach mathematics to and then assemble in a certain way. the iteration in the applications of that knowledge we put on the sheets led us to represent significant data through the coordinated dance of ones and zeros. we made millions of little switches suddenly let light pass, or suddenly not, and the accumulation of those actions means something to us. whether it's a sound, music, a pixel, a color, an image, a video. all of them digital products that are at the same time cultural and human material and, on the other hand, a combination of electrical states representing symbols.</p>
+ <p>so, to make those switches let light pass (or not) in a certain way, coordinated in such a way that the result is what the user expects, i must have a means of communication between the person using the machine and the metal sheets, which know very well how to do their thing, interpreting and representing, but not reading minds. computers (the set of intelligent sheets assembled in a certain way) are pedantic machines. very pedantic. they are capable of impressive computations as long as they receive precise instructions. almost military.</p>
+ <p>something that is known is that computers have managed to simplify this process very well. nowadays computers come equipped with a collection of tools to satisfy practically any need that can be delegated to technology through what we now know as applications and which was previously known simply as programs. in the end it's the same thing: the software that was written to automate (or facilitate) a task. an interface through which the user interacts (or enters instructions, clicks, text) and receives a solution (or computation, result) from the computer.</p>
+ <p>the question that automatically arises at this point is what happens behind the scenes for those "applications" to communicate with the intelligent sheets and for me to receive my result? or perhaps it's also worth asking how the hardware interacts with the software? fortunately, the answer is the very topic of this dissertation: operating systems, including their constituent parts, including the kernel.</p>
+ <p>before continuing like this, it seems productive to me to note what i understand by an operating system. when you reduce them to their most nauseating minimum in order to define them, you can say that they are a bundle of programs. a more or less predefined ecosystem with certain characteristics and parameters that seeks to satisfy a specific group of needs. clear examples of this are windows and macos, only because they are the most popular.</p>
+ <p>if we now allow ourselves to think in terms of windows and mac, the comparison becomes much easier. we can talk about a clear difference both in the visual aspect and in the functional aspect. although the purposes of each are similar, the method employed to satisfy them is different. they each have their own way of approaching the problem that is perfectly analyzable. the taskbar, the dock, the shortcuts, the method of installing programs, etc. they are two different operating systems. each one has a program that is a calculator, or one that is a text editor. each operating system will offer a collection of more or less office-like programmed tools in the case of home computers. or they can also offer other types of configurations depending on the purpose or use they seek to give to the computer. in the end it's the same thing: operating systems are that collection of programs, windows, desktop environments (how everything looks under a branding), commands, shortcuts, etc., that users interpret as an ontological whole called "computer". but it's worth abstracting and understanding it separately.</p>
+ <p>they happen simultaneously, however. they are interactions, simultaneous actions of one and the other (the computer and its operating system). on the one hand the intelligent sheets allowing (or not) electricity to pass through their cells to store them as ones and zeros dancing. and on the other hand that set of programs, those lines of code arranged in a certain way that, when executed in order in the style of instructions, result in an operating system. one of many.</p>
+ <p>one of the programs that are a constant across most operating systems is the one that allows you to explore your files. the program that, when you open it, shows you your images, documents, downloads,music, etc. the file browser is a window to our storage disks. it is an interface that allows us to visually observe the hierarchical order adopted by the files and directories that all together constitute the sheets where the code of my operating system is written.</p>
+ <p>all those tools are programs. that is, they are lines of code actually written in a document and that must lie somewhere to be accessed. all those files that constitute my programs (and everything else that i store on my disks) are organized following an established rule. "file systems" are formed so that there is a conventional order in which things will be saved so that they can later be accessed and used. so with the file browser we can actually observe the file system in action, even if it sounds redundant.</p>
+ <p>who determines this convention of archival arrangement? the kernel. not only does it determine the file system (or possible selection of systems) but it is basically responsible for all the convention on which the instructions of the user and the intelligent sheets that form the computer must communicate. why is a letter c written when i press the key with the c symbol on my keyboard? why does the word processor return a pdf file when i clicked on its button that says "export to pdf"? why did my printer start printing a document when i clicked on the program where it says "print"? what determines in what "language" the instructions to the computer will be given at the processor level?</p>
+ <p>i am shown the operating system through the monitors. another fundamental part of the operating system takes care of that: the desktop environment. but if i have a monitor i can actually see my operating system. i can see the program, its window, its interface, its buttons, its colors, its different functions. i can see the text appear obeying my keystrokes. all this visual interaction and input of data that i am having with my operating system (and that i can also see) will result in a reaction from my computer. it will publish my text online, play music, save my files as i produce them, store and encrypt certain information in the form of texts and images.</p>
+ <p>and each of those interactions with my metal happened in a language. in a way. my hard drives, my processor, my video card, all that intelligent metal receiving strict and detailed orders on when (and when not) to let a byte of energy pass. how long to store it. how to make the ones and zeros dance.receiving instructions from me through buttons on my screen. the gigantic translation of buttons on the screen is equal to bits yes or no in my processor, bytes yes or no in my storage, it is the responsibility of the kernel. that fundamental part for an operating system. the kernel is the one that speaks the language of the intelligent sheets. everything else is mere translation for the simple human (speaking figuratively, since the human wrote those kernels). interpretations that we assemble in a machine language and that do the work of our interpreter with the pedantic computers.</p>
+ <p>that, then, is linux. an interpreter that dictates conventions so that, through it, the programs of the operating system communicate the user's instructions to the hardware. linux is the kernel that operating system developers decide to use to, on top of it, write (or compile) a set of tools that, put together, form an operating system. or also what in the world of linux kernel systems is usually called a "linux distribution". like the one i use, for example, called manjaro. but the philosophical details of distributions are material for another dissertation. for now, it is enough to observe that, fortunately, we recognize that linux is not "a single operating system, difficult to understand" but a vibrant collection of many operating systems, each of which specializes in meeting a class of needs and that due to their free and open nature are well worth trying.</p>
+ </section>
+ </article>]]></description>
+</item>
+<item>
+<title>questioning narratives</title>
+<link>https://bracamontesman.click/blog/questioning-narratives.html</link>
+<guid>https://bracamontesman.click/blog/questioning-narratives.html</guid>
+<pubDate>2024-03-06</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>questioning narratives</h2>
+				<time>2024-03-06</time>
+				<p class="marginless"><em>about politics, critical thinking and freedom</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>russia and ukraine are still at war. according to what i've read, there are two defining moments in the conflict: the beginning in 2014 with russia's "annexation of crimea" and, more recently, the "russian invasion of ukraine" in 2022.</p>
+				<p>in the west, especially in political circles, there was a strong expression of rejection against russia due to the coverage given to the "invasion" and the declaration of war, which, according to imperialist corporate propaganda, was deemed senseless. simply hearing the news "war breaks out" convinced us that we were witnessing a brutal and exceptional act, unprecedented for some generations, shrouded in absolute malice and arbitrariness. it was easy for the population to take sides so quickly.</p>
+				<p>the source of our political convictions, especially regarding geopolitics, is almost always news programs and opinion shows in corporate media. practically everything we know about the world, or in other words, our version of reality, is entirely constructed through the discourse fed to us by corporate media. even when certain information is sourced from the internet, many times, it's the same "news" corporations spreading their material online. being on this platform does not guarantee independence from the publisher.</p>
+				<p>we are accustomed to receiving without a hint of doubt what we are told, with slow (or completely absent) critical thinking and an expectant memory for a phrase that summarizes the information and is easily digestible. a headline, in other words. and the media knows it.</p>
+				<p>this has led us into an epidemic of misinformation and communicative manipulation. the fact of having a single, immovable source of information, such as the news or the same journalist, places us at the end of a funnel whose content is the result of a conscious propaganda architecture that aims precisely to make us think in a certain way.</p>
+				<p>so, what does the war in ukraine have to do with this?</p>
+				<p>if one accepts a critical perspective, we are obligated to question the truth of the "russia is the villain" narrative. it should be obvious that this does not necessarily mean taking the opposite opinion but subjecting both arguments to the same doubt. however, very little is known about the russian version of the issue. without attempting somersaults or employing impossible defenses, i honestly believe that their version should be considered as a factor before taking sides, instead of reducing ourselves to reactive individuals easily swayed with war expressions and well-directed hatred.</p>
+				<p>the purpose of questioning the information presented to us is to achieve, as far as possible, communicative democracy, and, even more importantly, freedom of thought. anyone still denying the existence of the "big brother" is simply choosing the path of submission.</p>
+				<p>it is no longer a hunch or a conspiratorial invention: large digital corporations (those involved in data harvesting) and many agencies in the service of imperialist governments use surveillance and espionage to subdue us through the manipulation of our realities and discourses. if they need to wage war for one reason or another, they can simply start their machinery of disinformation to scare us and align us. they make us "want" the things that benefit the power elite through the constant repetition of tailored speeches (very much like goebbels). they seek to keep people in the numbing stupor of ignorance, thus avoiding any intellectual and revolutionary awakening of their peoples that may arise from frustration or social organization.</p>
+				<p>that's why the question "are the russians the bad guys?" is necessary because with this simple interruption of obedient behavior, we open ourselves to the possibility of criticizing the biased "journalism" that works for those in power. by questioning the news package offered to us, we can gain perspective on the true size of the landscape and move towards making better decisions once we have had access to all the information, with all the different perspectives available.</p>
+				<p>in my country, perhaps the most urgent thing is for the population to become aware that these things happen, to prevent their thoughts from lingering in the comfortable ignorance of corporate reasons and settling for thinking, "why would they want to do this?" precisely, it is this ignorance of the methods and their purposes that they seek to spread with their sensationalist publications lacking depth and critique. with their jokes, with their clowns and their lorets. with their cartoonists, with their "historians," and organic intellectuals. having critical thinking turned off when we see that "our country is worse than ever" and that "the senseless war of the bad russians" has broken out.</p>
+				<p>we better wake up.</p>
+			</section>
+		</article>]]></description>
+</item>
+<item>
+<title>tool for abuse</title>
+<link>https://bracamontesman.click/blog/tool-for-abuse.html</link>
+<guid>https://bracamontesman.click/blog/tool-for-abuse.html</guid>
+<pubDate>2024-03-08</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>tool for abuse</h2>
+				<time>2024-03-08</time>
+				<p class="marginless"><em>about critical thinking, corporate surveillance, privacy and digital rights</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>there is a hard truth surrounding software, new computational technology, and its industry: it is, from its very core, privileged in principle and nefariously and systematically developed to be a tool for abuse. even though there is hope for computers, servers, and networks to represent tools for freedom of speech and free communication rather than oppression, the current status of the situation is the exact opposite.</p>
+				<p>it is evident that a significant group of silicon valley programmers and their bosses are fighting to bury the network's essence of privacy and freedom; instead, they are applying all capacities to fund capitalist companies, to hoard knowledge behind paywalls, and to make intellectual property claims. there is a developing culture among young technologists to beg for positions in companies that seek benefits even at the expense of human rights. and that 'reality' was imposed by the economic machine that turns everything (even development) into a product. is that the future of the digital world?</p>
+				<p>instead of surrendering the digital arena, we must take it into our own hands and be present. not be defeated and absent, full of antipathetic feelings inspired by the rotten status. we must transform the communities' convictions so new technology-for-profit companies lose a little power and relax the tight control they have in the market. let’s stay vigilant so it won’t become the absolute eye and fist of oppression, as the corporate software developers are so eager to build.</p>
+ <p>free association and open-source technology are the clearest answers at hand.</p>
+			</section>
+		</article>]]></description>
+</item>
+<item>
+<title>website move</title>
+<link>https://bracamontesman.click/blog/website-move.html</link>
+<guid>https://bracamontesman.click/blog/website-move.html</guid>
+<pubDate>2024-03-20</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>website move</h2>
+				<time>2024-03-20</time>
+				<p class="marginless"><em>about this website hosting provider</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>i just migrated my website from codeberg to nearlyfreespeech (nfsn). there's a lot to take in, but it feels awesome to finally have it up and running. with nfsn, you've got way more control, make your own decisions, and the pricing is fair and affordable for small basic blogs like mine. plus, codeberg is more geared towards cooperative development and foss. my hosting needs are different because i'm running a personal website with a more opinionated vibe.</p>
+ <p>i'd never used filezilla before, and this seemed like the perfect opportunity to make the switch and start figuring it out. it's a name i've seen around a lot over the years, but i never really understood how to use it. digging into my nfsn panel, i stumbled upon the sftp info for connecting and uploading. after a bit of web surfing, i seized the chance. it was the shortest learning curve i've ever had. it was as streamlined as this <a href="https://help.one.com/hc/en-us/articles/115005585709-How-do-I-connect-to-an-SFTP-server-with-FileZilla" target="_blank">article</a>, and in just a few minutes, i was in the server, uploading the website files and online.</p>
+ <p>even though there was an option to handle everything through the command line, i opted for the gui. i feel like, given the way i'm building this website (without using generators), i can have more control over each update and any new blog post. i keep a local version control with git, and i keep pushing the changes to the now private codeberg repository. however, cloning the repo to the nfsn server and writing a hook for it to checkout to a public branch and publish each push felt a little overkill. i preferred to go with the filezilla comparison mode, where i can also track changes in files and only push the updated versions with a couple of clicks. it as easy as the full automation, i feel.</p>
+ <div class="img-container">
+ <a href="https://imgbox.com/S7UUSiJ1" target="_blank"><img src="https://images2.imgbox.com/75/55/S7UUSiJ1_o.png"></a>
+ </div>
+ <p>when you go with these kinds of hosting services, there are also some responsibilities that fall on you. security is the most crucial. nfsn provides the basic (almost obvious) protections based on their infrastructure. however, it's up to you to ensure your site is secure. in my case, since the blog is built with the most basic technologies and vanilla applications, the attack surface is tiny. creating a well-configured .htaccess file should do the trick. also, ensuring there's an active tls certificate and enabling redirection will pretty much wrap up the security tasks.</p>
+ <p>i make sure that the .htaccess file covers the basic security practices, like minding xss attacks by setting x-xss-protection to "1; mode=block"; preventing clickjacking by always appending x-frame-options sameorigin and preventing mime sniffing by setting x-content-type-options nosniff. plus, i get to play a little with the url aesthetics and that's cool.</p>
+ <p>i recognize this is not the biggest operation, but again, being a self-learning tool, its results are more than satisfactory, and overall, this has been a rewarding experience. it's been a blast to do, and eventually, it'll be a happiness machine with countless opportunities to learn and grow. it just takes a bit of hands-on tinkering.</p>
+			</section>
+		</article>]]></description>
+</item>
+<item>
+<title>xz-utils backdoor</title>
+<link>https://bracamontesman.click/blog/xz-utils-backdoor.html</link>
+<guid>https://bracamontesman.click/blog/xz-utils-backdoor.html</guid>
+<pubDate>2024-03-30</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>xz-utils backdoor</h2>
+				<time>2024-03-30</time>
+				<p class="marginless"><em>about the odd case of xz-utils backdoor and the creator of it</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<h3>what is xz-utils?</h3>
+ <p>xz utils, which used to be called lzma utils, <a href="https://en.wikipedia.org/wiki/XZ_Utils" target="_blank">is a free software toolbox for lossless data compression</a>. it's mainly used through command line interaction and it works on systems like linux and also windows starting from version 5.0. when you use xz utils to compress or decompress data, it uses something called the lempel-ziv-markov chain algorithm, or lzma for short. this fancy name basically means it's a smart way to crunch down data without messing it up.</p>
+ <p>originally, xz utils was made as a version of another program called lzma-sdk, which was created by a guy named igor pavlov. but then the xz utils folks tweaked it to work smoothly on unix systems (like linux) and to match how things usually work in those environments.</p>
+ <h3>discovery of a backdoor</h3>
+ <p>on march 29th, 2024, andres freund, a software engineer at microsoft, <a href="https://mastodon.social/@andresfreundtec/112180083704606941" target="_blank">accidentally stumbled upon a sneaky backdoor in xz-utils</a> versions 5.6.0 and 5.6.1 while researching odd cpu usage by ssh processes.</p>
+ <p>the sneaky code wasn't spotted in the original code stored in the git repository, which is like the master storage for code changes. why? because it was using a tool called an m4 macro, which wasn't part of the git distribution. according to freund, who discovered this mischief and talked about it on the oss-security's openwall, this m4 macro is like the secret handshake for the backdoor to sneak into the building process. now, here's where it gets serious: <a href="https://www.redhat.com/en/blog/urgent-security-alert-fedora-41-and-rawhide-users" target="_blank">red hat says</a> that this sneaky build can mess with the security of sshd, which is a way to securely connect to computers remotely. if everything lines up just right, this meddling could let a bad actor break through sshd's security and get into the whole system without permission.</p>
+ <h3>suspected actor</h3>
+ <p>when we're talking about an "under-the-radar" project like xz, they are usually not backed by any big company and runs purely on volunteer power. that's the vibe of many open-source projects. the lesser-known ones, sometimes used by loads of people, are looked after by just a handful of folks who donate their time to keep things running smoothly.</p>
+ <p>this particular tool was put together by lasse collin from the get-go, with jia tan jumping in about two years back, seemingly out of the blue. jia got the keys to the kingdom about six months later, which means this seemingly "boring" tool, used by tons of folks, was being looked after by just two people. and when lasse needed to take a breather due to health stuff, that left jia in charge of making changes and giving the green light to two versions that, so far, seem to be affected.</p>
+ <p>as freund pointed out in their <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4" target="_blank">message on the openwall forum</a>, considering the activity over a few weeks, the person making the changes is either directly involved or their system got hit hard. but it seems less likely that it's just a hacked system, especially since they were talking for some time about the "fixes" needed. these fixes were basically band-aids to patch up crashes caused by xz and the sneaky backdoor itself not interacting so well. jia tan teamed up with other developers to push these fixes (basically, workarounds for the backdoor glitches) into major linux distributions, like fedora 40 and 41. they even pitched in to write code to tackle related issues and speed up the fixes.</p>
+ <p>now, here's where things get a bit intense. pulling off something like this, spreading a sneaky attack through a project over two years of work and collaboration, takes serious cash. it's like, you need big bucks to make big moves. so, when you see something this slick, it's hard not to think it's being bankrolled by a government or something. it's got us wondering: could sneaking into open-source software through supply-chain attacks become the new target for certain groups? it's definitely a spooky thought.</p>
+ <div class="img-container">
+ <img src="https://images2.imgbox.com/1c/8f/YSMC57xJ_o.png">
+ </div>
+			</section>
+		</article>]]></description>
+</item>
+</channel>
+</rss>

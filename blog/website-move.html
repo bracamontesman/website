@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="miguel bracamontes">
+	<meta name="description" content="a wwweb enthusiast online space">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="website move">
+	<meta property="og:url" content="https://miguelbracamontes.website/blog/website-move.html">
+	<meta property="og:description" content="about a recent move to the hosting provider for this website">
+	<meta property="og:image" content="https://images2.imgbox.com/9c/13/lxhTGs4k_o.png">
+	<meta property="article:author" content="miguel bracamontes">
+    <title>miguel bracamontes</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="preconnect" href="https://fonts.bunny.net">
+	<link rel="stylesheet" href="https://fonts.bunny.net/css?family=cousine:400">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="me" href="https://infosec.exchange/@miguel">
+</head>
+<body>
+	<!-- header -->
+	<header class="marpad">
+		<h1>miguel bracamontes</h1>
+		<p><em>a wwweb enthusiast</em></p>
+		<img src="https://images2.imgbox.com/71/7e/dJZMLjYc_o.gif">
+	</header>
+	<!-- navigation bar -->
+	<nav class="marpad">
+		<ul class="navbar">
+			<li><a href="/index">home</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li><a href="/contact">contact</a></li>
+			<li><a href="/about">about</a></li>
+		</ul>
+	</nav>
+	<!-- content -->
+	<main class="marpad">
+		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>website move</h2>
+				<time>2024-03-20</time>
+				<p class="marginless"><em>about this website hosting provider</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>i just migrated my website from codeberg to nearlyfreespeech (nfsn). there's a lot to take in, but it feels awesome to finally have it up and running. with nfsn, you've got way more control, make your own decisions, and the pricing is fair and affordable for small basic blogs like mine. plus, codeberg is more geared towards cooperative development and foss. my hosting needs are different because i'm running a personal website with a more opinionated vibe.</p>
+                <p>i'd never used filezilla before, and this seemed like the perfect opportunity to make the switch and start figuring it out. it's a name i've seen around a lot over the years, but i never really understood how to use it. digging into my nfsn panel, i stumbled upon the sftp info for connecting and uploading. after a bit of web surfing, i seized the chance. it was the shortest learning curve i've ever had. it was as streamlined as this <a href="https://help.one.com/hc/en-us/articles/115005585709-How-do-I-connect-to-an-SFTP-server-with-FileZilla" target="_blank">article</a>, and in just a few minutes, i was in the server, uploading the website files and online.</p>
+                <p>even though there was an option to handle everything through the command line, i opted for the gui. i feel like, given the way i'm building this website (without using generators), i can have more control over each update and any new blog post. i keep a local version control with git, and i keep pushing the changes to the now private codeberg repository. however, cloning the repo to the nfsn server and writing a hook for it to checkout to a public branch and publish each push felt a little overkill. i preferred to go with the filezilla comparison mode, where i can also track changes in files and only push the updated versions with a couple of clicks. it as easy as the full automation, i feel.</p>
+                <div class="img-container">
+                    <a href="https://imgbox.com/S7UUSiJ1" target="_blank"><img src="https://images2.imgbox.com/75/55/S7UUSiJ1_o.png"></a>
+                </div>
+                <p>when you go with these kinds of hosting services, there are also some responsibilities that fall on you. security is the most crucial. nfsn provides the basic (almost obvious) protections based on their infrastructure. however, it's up to you to ensure your site is secure. in my case, since the blog is built with the most basic technologies and vanilla applications, the attack surface is tiny. creating a well-configured .htaccess file should do the trick. also, ensuring there's an active tls certificate and enabling redirection will pretty much wrap up the security tasks.</p>
+                <p>i make sure that the .htaccess file covers the basic security practices, like minding xss attacks by setting x-xss-protection to "1; mode=block"; preventing clickjacking by always appending x-frame-options sameorigin and preventing mime sniffing by setting x-content-type-options nosniff. plus, i get to play a little with the url aesthetics and that's cool.</p>
+                <p>i recognize this is not the biggest operation, but again, being a self-learning tool, its results are more than satisfactory, and overall, this has been a rewarding experience. it's been a blast to do, and eventually, it'll be a happiness machine with countless opportunities to learn and grow. it just takes a bit of hands-on tinkering.</p>
+			</section>
+		</article>
+	</main>
+	<!-- footer -->
+	<footer class="marpad">
+		<p>&copy; 2024 miguel bracamontes</p>
+		<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img src="https://images2.imgbox.com/a5/42/IV9saTzo_o.png"></a>
+	</footer>
+	<!-- scripts -->
+	<script src="/js/script.js"></script>
+</body>
+</html>

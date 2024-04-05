@@ -1,0 +1,33 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Remove index.html from homepage URL
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Remove .html extension from blog.html
+RewriteRule ^blog/?$ /blog.html [NC,L]
+
+# Handle blog entries in /blog directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blog/([^/]+)/?$ /blog/$1.html [NC,L]
+
+# Protect against XSS attacks
+Header set X-XSS-Protection "1; mode=block"
+
+# Prevent clickjacking
+Header always append X-Frame-Options SAMEORIGIN
+
+# Prevent MIME sniffing
+Header set X-Content-Type-Options nosniff
+
+# Disable server signature
+ServerSignature Off
+
+# Prevent directory listing
+Options -Indexes

@@ -1,0 +1,4 @@
+# .gitignore
+
+# Exclude the rss-gen.sh script
+rss-gen.sh
