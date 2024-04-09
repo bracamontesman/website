@@ -87,6 +87,29 @@
 		</article>]]></description>
 </item>
 <item>
+<title>resistance under attack</title>
+<link>https://bracamontesman.click/blog/resistance-under-attack.html</link>
+<guid>https://bracamontesman.click/blog/resistance-under-attack.html</guid>
+<pubDate>2024-04-08</pubDate>
+<description><![CDATA[		<article>
+			<!-- blog entry metadata (title, date and about) -->
+			<section class="article-header">
+				<h2>resistance under attack</h2>
+				<time>2024-04-08</time>
+				<p class="marginless"><em>about the resistance against the online surveillance and why we need to keep doing it</em></p>
+			</section>
+			<!-- blog entry content -->
+			<section>
+				<p>is there any real meaning to the resistance we put up against online surveillance and the protection of our digital rights? absolutely, there is. however, the ideology and conviction behind this are always under attack. feels as if the majority of people seeking convenience in their technology usage are the ones keeping our rights and privacy defense in an abandoned state through apathy. it's a case of "use it or lose it" being the truth of our days, but applied to our very human rights.</p>
+ <p>it might not be a direct and active attack —i recognize that much— since lawmakers aren't actively stripping away these rights and censorship attempts, at least, to be discreet sometimes. but it's definitely a passive and dangerous attack. we passively attack the resistance by allowing corporate tech to slowly and openly develop and introduce tools that strip away privacy by default, and then receiving those "updates" silently and obediently, again, for the sake of convenience. we don't raise questions or any kind of dissenting voice. we find these "products" so integrated into our lives that the mere thought of them disappearing is actually frightening.</p>
+ <p>these updates are wrongfully and maliciously labeled as "progress," so people, in principle, feel they cannot resist their implementation lest they become retrograde against "human flourishing." this mechanism of self-social pressure is one of the main culprits behind our current acceptance of ad-driven surveillance capitalism and likely the reason most folks won't even look for alternatives.</p>
+ <p>at this point, it's almost comical to bring back the classic argument of "nothing to hide" to illustrate what we're fighting for, but it's still productive to let others know that this fight, and this consciousness, stems not from having something to hide, but from the absolute and focused conviction that governments and corporations scrutinizing our activity have wrong, bad, and obnoxious intentions for that data.</p>
+ <p>it's become a tradition for me to be the outcast among my family and friends. i'm always labeled as the "guy with the eternal fixation on this privacy trend"; it's never taken seriously. what stands out the most whenever i bring up the subject is the genuine conviction that what i'm talking about doesn't exist. that's primarily why they all look down on me: the severe negligence with the truth and the crippling ignorance of how the "social networks" business model actually works. there's even an extreme slur in my language, akin to the english term "tankie," that's been applied to me when i try to explain that facebook is actually bad for their privacy. and i'm seen as little less than crazy and paranoid.</p>
+ <p>despite all this, as a generation or community, we need to stand up against this abuse. we need to keep calling out those frauds for what they are and keep fighting for online freedom and to regain our basic human rights, such as privacy and freedom of speech. we have a duty to the future, not to let this conviction die at the hands of a few who want it all, to keep educating our peers to empower them and to show them that control over what's shared and known is actually possible. all good things come at a cost. that's why, even when everything seems to be going downhill, we need to find the energy and keep resisting through technology and the occupation of the online platforms that communities have developed.</p>
+			</section>
+		</article>]]></description>
+</item>
+<item>
 <title>tool for abuse</title>
 <link>https://bracamontesman.click/blog/tool-for-abuse.html</link>
 <guid>https://bracamontesman.click/blog/tool-for-abuse.html</guid>
@@ -156,7 +179,7 @@
  <h3>suspected actor</h3>
  <p>when we're talking about an "under-the-radar" project like xz, they are usually not backed by any big company and runs purely on volunteer power. that's the vibe of many open-source projects. the lesser-known ones, sometimes used by loads of people, are looked after by just a handful of folks who donate their time to keep things running smoothly.</p>
  <p>this particular tool was put together by lasse collin from the get-go, with jia tan jumping in about two years back, seemingly out of the blue. jia got the keys to the kingdom about six months later, which means this seemingly "boring" tool, used by tons of folks, was being looked after by just two people. and when lasse needed to take a breather due to health stuff, that left jia in charge of making changes and giving the green light to two versions that, so far, seem to be affected.</p>
- <p>as freund pointed out in their <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4" target="_blank">message on the openwall forum</a>, considering the activity over a few weeks, the person making the changes is either directly involved or their system got hit hard. but it seems less likely that it's just a hacked system, especially since they were talking for some time about the "fixes" needed. these fixes were basically band-aids to patch up crashes caused by xz and the sneaky backdoor itself not interacting so well. jia tan teamed up with other developers to push these fixes (basically, workarounds for the backdoor glitches) into major linux distributions, like fedora 40 and 41. they even pitched in to write code to tackle related issues and speed up the fixes.</p>
+ <p>as freund pointed out in their <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4" target="_blank">message on the openwall forum</a>, considering the activity over a few weeks, the person making the changes is either directly involved or their system got hit hard. but it seems less likely that it's just a hacked system, especially since they were talking for some time about the "fixes" needed. these fixes were basically band-aids to patch up crashes caused by xz and the sneaky backdoor itself not interacting so well. <a href="https://news.ycombinator.com/item?id=39865810" target="_blank">jia tan teamed up with other developers</a> to push these fixes (basically, workarounds for the backdoor glitches) into major linux distributions, like fedora 40 and 41. they even pitched in to write code to tackle related issues and speed up the fixes.</p>
  <p>now, here's where things get a bit intense. pulling off something like this, spreading a sneaky attack through a project over two years of work and collaboration, takes serious cash. it's like, you need big bucks to make big moves. so, when you see something this slick, it's hard not to think it's being bankrolled by a government or something. it's got us wondering: could sneaking into open-source software through supply-chain attacks become the new target for certain groups? it's definitely a spooky thought.</p>
  <div class="img-container">
  <img src="https://images2.imgbox.com/1c/8f/YSMC57xJ_o.png">
