@@ -2,3 +2,6 @@
 
 # Exclude the rss-gen.sh script
 rss-gen.sh
+
+# Exclude the drafts folder
+drafts/
