@@ -9,13 +9,15 @@ RewriteRule ^([^/]+)/?$ $1.html [L]
 # Remove index.html from homepage URL
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Remove .html extension from blog.html
+# Remove .html extension from blog.html and movies.html
 RewriteRule ^blog/?$ /blog.html [NC,L]
+RewriteRule ^movies/?$ /movies.html [NC,L]
 
-# Handle blog entries in /blog directory
+# Handle entries in /blog and /movies directory
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)/?$ /blog/$1.html [NC,L]
+RewriteRule ^movies/([^/]+)/?$ /movies/$1.html [NC,L]
 
 # Protect against XSS attacks
 Header set X-XSS-Protection "1; mode=block"
@@ -31,3 +33,4 @@ ServerSignature Off
 
 # Prevent directory listing
 Options -Indexes
+
