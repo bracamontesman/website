@@ -13,10 +13,14 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^blog/?$ /blog.html [NC,L]
 RewriteRule ^movies/?$ /movies.html [NC,L]
 
-# Handle entries in /blog and /movies directory
+# Handle entries in /blog directory
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)/?$ /blog/$1.html [NC,L]
+
+# Handle entries in /movies directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^movies/([^/]+)/?$ /movies/$1.html [NC,L]
 
 # Protect against XSS attacks
